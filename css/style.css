@@ -1,0 +1,31 @@
+/* Basic, clean wedding template CSS */
+:root{
+  --accent: #d9c3a6;
+  --bg: #fffaf6;
+  --text: #2b2b2b;
+  --muted: #6b6b6b;
+}
+*{box-sizing:border-box}
+body{font-family: 'Segoe UI', Roboto, Arial, sans-serif; margin:0; color:var(--text); background:var(--bg)}
+.hero{position:relative;height:85vh;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.hero img{position:absolute;left:0;top:0;width:100%;height:100%;object-fit:cover;filter:brightness(0.6)}
+.overlay{position:absolute;inset:0;background:linear-gradient(180deg, rgba(0,0,0,0.2), rgba(0,0,0,0.45))}
+.hero-content{position:relative;text-align:center;color:white;z-index:2;padding:20px}
+.hero-content h1{font-family: 'Times New Roman', serif; font-size:48px; margin:0 0 8px}
+.subtitle{letter-spacing:3px;opacity:0.95;margin:0}
+.date{font-size:20px;margin:8px 0}
+.countdown{margin-top:12px;font-size:18px;background:rgba(255,255,255,0.1);padding:8px;border-radius:8px;display:inline-block}
+.controls{margin-top:12px}
+.controls button{padding:8px 12px;border-radius:6px;border:0;background:var(--accent);cursor:pointer}
+
+.section{padding:48px 20px;max-width:900px;margin:0 auto}
+.section h2{font-size:28px;margin-bottom:12px}
+.gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+.gallery-grid img{width:100%;height:140px;object-fit:cover;border-radius:8px}
+
+.footer{padding:20px;text-align:center;color:var(--muted);font-size:14px;background:#fff}
+
+form{display:flex;gap:8px;flex-wrap:wrap}
+form input{padding:10px;border-radius:6px;border:1px solid #ddd;flex:1}
+form button{background:var(--accent);border:0;padding:10px 16px;border-radius:6px;cursor:pointer}
+.map{height:220px;background:#eee;border-radius:8px;display:flex;align-items:center;justify-content:center;color:#666}
